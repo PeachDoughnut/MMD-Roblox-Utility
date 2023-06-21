@@ -5,7 +5,7 @@
 --(Y) remove unneeded poses (anything that is not RootPart)
 --(Y) transformation rescaling (reduce reliance on external plugins)
 --(N) remove poses with little to no movement between keyframes							(2023 note: difficult to determine whether an empty pose for the purposes of a finger, say...are needed)
---(N) match non-linear pose interpolation methods with removed movement for extreme optimization quality	(2023 note: over-optimization technique)
+--(N) match non-linear pose interpolation methods with removed movement for extreme optimization quality	(2023 note: over-optimization)
 
 --[[ command line:
 --(REMINDER: module returns in-studio are cached, restart after changing variables!)
@@ -20,7 +20,7 @@ local cutoff = fps24					--[[set this to the total number of frames in your anmi
 
 require(game.ServerStorage.KeyframeSequence_Compressor)(animation, cutoff, rig)
 
-]]
+]]--GitHub does not parse Lua correctly, apparently. This is the end of the comment beginning on line 10. Does work this way... Disappointing. Lines 17-19 should stay in their own comment scopes.
 
 function split_keyframes(keyframe_seq, frame_cutoff, rig)
 	warn('version 1.0.5C')
