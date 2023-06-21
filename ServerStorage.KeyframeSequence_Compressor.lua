@@ -4,7 +4,7 @@
 --(Y) split keyframes to 30 sec
 --(Y) remove unneeded poses (anything that is not RootPart)
 --(Y) transformation rescaling (reduce reliance on external plugins)
---(N) remove poses with little to no movement between keyframes												(2023 note: difficult to determine whether an empty pose for the purposes of a finger, say...are needed)
+--(N) remove poses with little to no movement between keyframes							(2023 note: difficult to determine whether an empty pose for the purposes of a finger, say...are needed)
 --(N) match non-linear pose interpolation methods with removed movement for extreme optimization quality	(2023 note: over-optimization technique)
 
 --[[ command line:
@@ -15,8 +15,8 @@ local fps12 = 2480
 local fps6 = 1241
 
 local rig = workspace["YYB Hatsune Miku_10th"].body	--[[select your rig here, before running in command-line]]
-local animation = rig.AnimSaves["Test"]				--[[select your animation (KeyframeSequence) to compress]]
-local cutoff = fps24								--[[set this to the total number of frames in your anmiaton...in this case, I have two variables for my own ease of use working with a couple animations. Just enter the number.]]
+local animation = rig.AnimSaves["Test"]			--[[select your animation (KeyframeSequence) to compress]]
+local cutoff = fps24					--[[set this to the total number of frames in your anmiaton...in this case, I have two variables for my own ease of use working with a couple animations. Just enter the number.]]
 
 require(game.ServerStorage.KeyframeSequence_Compressor)(animation, cutoff, rig)
 
