@@ -1,6 +1,6 @@
 # MMD-Roblox-Utility
 
-"Ro-MDD" tools; a little collection of script utilities used to help import MMD animations to roblox.
+"Ro-MMD" tools; a little collection of script utilities used to help import MMD animations to roblox.
 
 The import process is hands-on and involves a lot of blender, but some scripts were made to assist in the process. Here is the code. I love rigs, rigging, and working with skinned meshes. Honestly, it's satisfying!
 
